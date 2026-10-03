@@ -1,0 +1,16 @@
+{
+    "name": "Python Learning Dashboard",
+    "short_name": "Python Learn",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#f4f6fb",
+    "theme_color": "#6366f1",
+    "description": "30-Day Python Internship Preparation Dashboard",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learning Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div>
+            <h1>🐍 Python Learning Dashboard</h1>
+            <p>30-Day Python Internship Preparation</p>
+        </div>
+
+        <div class="progress-box">
+
+    <span>Overall Progress</span>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <strong id="progress">0%</strong>
+
+    <div class="streak">
+        🔥 <span id="streak">0</span> Day Streak
+    </div>
+
+</div>
+    </header>
+
+
+    <main>
+        <section class="today-section">
+
+    <div class="today-icon">📅</div>
+
+    <div class="today-content">
+
+        <span>Today's Learning</span>
+
+        <h2 id="todayTitle">
+            Your learning plan starts on October 5
+        </h2>
+
+        <p id="todayDescription">
+            Get ready for your 30-day Python journey! 🐍
+        </p>
+
+    </div>
+
+    <button id="todayButton">
+        Open Today's Lesson
+    </button>
+
+</section>
+
+        <!-- CALENDAR -->
+
+        <section class="calendar-section">
+
+            <div class="calendar-header">
+
+                <button id="prevMonth">‹</button>
+
+                <h2 id="monthYear"></h2>
+
+                <button id="nextMonth">›</button>
+
+            </div>
+
+
+            <div class="weekdays">
+
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+
+            </div>
+
+
+            <div id="calendar" class="calendar"></div>
+
+        </section>
+
+
+        <!-- DAY DETAILS -->
+
+        <section class="day-section">
+
+            <div id="welcome">
+
+                <div class="big-icon">📚</div>
+
+                <h2>Select a Day</h2>
+
+                <p>
+                    Click a date from the calendar
+                    to open your learning plan.
+                </p>
+
+            </div>
+
+
+            <div id="dayDetails" class="hidden">
+
+                <span id="dayNumber" class="day-badge">
+                    DAY 1
+                </span>
+
+
+                <h2 id="dayTitle">
+                    Python Introduction
+                </h2>
+
+
+                <!-- TOPICS -->
+
+                <div class="learning-card">
+
+                    <h3>📚 Topics to Learn</h3>
+
+                    <div id="topics"></div>
+
+                </div>
+
+
+                <!-- VIDEO -->
+
+                <div class="learning-card">
+
+                    <h3>🎥 YouTube Video</h3>
+
+                    <p id="videoDescription">
+                        Watch the recommended video
+                        for today's topic.
+                    </p>
+
+                    <a
+                        id="videoLink"
+                        href="#"
+                        target="_blank"
+                        class="action-button"
+                    >
+                        ▶ Watch Video
+                    </a>
+
+                </div>
+
+
+                <!-- NOTES -->
+
+                <div class="learning-card">
+
+                    <h3>📝 Notes</h3>
+
+                    <ul id="notes"></ul>
+
+                </div>
+
+
+                <!-- PRACTICE -->
+
+                <div class="learning-card">
+
+                    <h3>💻 Coding Practice</h3>
+
+                    <ul id="practice"></ul>
+
+                </div>
+
+
+                <!-- INTERVIEW -->
+
+                <div class="learning-card">
+
+                    <h3>🎤 Interview Questions</h3>
+
+                    <ul id="interview"></ul>
+
+                </div>
+
+
+                <!-- COMPLETE -->
+
+                <button id="completeBtn">
+
+                    ✓ Mark Day Complete
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
